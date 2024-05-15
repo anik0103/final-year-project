@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./image/logo.png" alt="">
+    </div>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="" class="social"><img src="./image/facebook.png" alt=""></a>
+                    <a href="" class="social"><img src="./image/instagram.png" alt=""></a>
+                    <a href="" class="social"><img src="./image/whatsapp.png" alt=""></a>
+                </div>
+                <P>or use your email for registration</P>
+                <input type="text" name="txt" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="EMAIL" required="">
+                <input type="password" name="pswd" placeholder="password" required="">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="sign-in">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="" class="social"><img src="./image/facebook.png" alt=""></a>
+                    <a href="" class="social"><img src="./image/instagram.png" alt=""></a>
+                    <a href="" class="social"><img src="./image/whatsapp.png" alt=""></a>
+                </div>
+                <P>or use your account</P>
+                <input type="email" name="email" placeholder="EMAIL" required="">
+                <input type="password" name="pswd" placeholder="password" required="">
+                <a href="#" style="color: blue;">Forget your password?</a>
+                <button>Sign in</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>welcome back!</h1>
+                    <P>to keep connected with us please login with your personal info</P>
+                    <button id="sign-In">Sing in</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hello, Friend</h1>
+                    <P>Enter your personal details and start journey with us</P>
+                    <button id="sign-Up">Sign UP</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('sign-Up');
+        const signInButton = document.getElementById('sign-In');
+        const main = document.getElementById('main');
+
+        signUpButton.addEventListener('click', () => {
+            main.classList.add("right-panel-active")
+            });
+
+            signInButton.addEventListener('click', () => {
+            main.classList.remove("right-panel-active")
+            });
+    </script>
+</body>
+
+</html>
