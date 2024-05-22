@@ -115,7 +115,10 @@ text-edge: cap; */
 }
 
 .card-innr figure img {
+    width: 170px;
+    height: 220px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .card-innr h4 {
@@ -580,6 +583,14 @@ text-edge: cap; */
     margin: 0;
     padding: 0;
 }
+.card-inn figure img {
+    width: 170px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
 
 .card-inn .val {
     font-family: 'Poppins';
@@ -1110,3 +1121,36 @@ text-edge: cap; */
     margin: 0;
     padding: 0;
 }
+
+    #myVideo {
+        position: static;
+        right: 0;
+        bottom: 0;
+        min-width: 300px; 
+        min-height: 200px;
+        object-fit: cover;
+      }
+      
+      .content {
+        position:static;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }

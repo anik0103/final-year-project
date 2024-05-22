@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FF9A8B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .order-form {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+        .order-form h2 {
+            color: #FF9A8B;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #FF9A8B;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #FF9A8B;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .radio-group label {
+            color: #FF9A8B;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF9A8B;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e60073;
+        }
+        .group{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="order-form">
+        <h2>Order Form</h2>
+        <div class="group">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" name="contact" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+        <div class="group">
+        <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <input type="text" id="occasion" name="occasion" required>
+        </div>
+        <div class="form-group">
+            <label for="cake-name">Name on the Cake</label>
+            <input type="text" id="cake-name" name="cake-name" required>
+        </div>
+    </div>
+        <div class="form-group">
+            <label>Payment Method</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="payment" value="cod" required> Cash on Delivery
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="online" required> Online Payment
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+</body>
+</html>
