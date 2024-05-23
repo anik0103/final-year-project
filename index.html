@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +25,16 @@
                         <li><a href="./contact.html">Support</a></li>
                     </ul>
                 </div>
-                <div class="sign-btn">
-                    <a href="./sign-up.html">Sign Up/Log In</a>
-                </div>
+
+                <!-- <div class="fs-3 cart" id="profileIcon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="userEmail"></span>
+                </div> -->
+<!-- 
+                <div class="sign-btn" id="signBtn">
+                    <a href="./sign-up.html" id="signUpLink">Sign Up/Log In</a>
+                </div> -->
+                
             </div>
         </div>
     </header>
@@ -417,6 +425,21 @@
             </footer>
         </div>
     </section>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signBtn = document.getElementById('signBtn');
+            const signUpLink = document.getElementById('signUpLink');
+
+            if (localStorage.getItem('signUpClicked')) {
+                signBtn.style.display = 'none';
+            }
+
+            signUpLink.addEventListener('click', function () {
+                localStorage.setItem('signUpClicked', true);
+            });
+        });
+    </script> -->
 </body>
 
 </html>

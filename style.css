@@ -8,6 +8,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.cart {
+    margin-left: 500px;
+    cursor: pointer;
+}
 
 .container {
     max-width: 1140px;

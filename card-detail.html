@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Card Details</title>
     <link href="card-details.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -24,9 +25,6 @@
                             <li><a href="./contact.html">Support</a></li>
                         </ul>
                     </div>
-                    <div class="sign-btn">
-                        <a href="sign-up.html">Sign Up/Log In</a>
-                    </div>
                 </div>
             </div>
         </header>
@@ -34,7 +32,7 @@
     <section class="body-section">
         <div class="container">
             <div class="right">
-                <img src="./image/holidaycard.png" alt="">
+                <img id="cardImage" src="" alt="">
             </div>
             <div class="left">
                 <h3>holidays</h3>
@@ -42,21 +40,16 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>card verse</h3>
-                        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias distinctio
-                            blanditiis
-                            commodi deserunt vitae nobis et quam iusto sint.</P>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias distinctio blanditiis commodi deserunt vitae nobis et quam iusto sint.</p>
                     </div>
                 </div>
                 <div class="button-group">
                     <a href="/buy.html"><button>Buy now</button></a>
-
-                    <button><img src="fav.png" alt="" height="18px">Add to favourites</button>
                 </div>
                 <div class="additionalcard">
                     <img src="Frame.png" alt="" height="22px">
-                    <P>Add an optional gift card with this card</P>
+                    <p>Add an optional gift card with this card</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -93,6 +86,15 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const imgSrc = urlParams.get('img');
+            if (imgSrc) {
+                document.getElementById('cardImage').src = imgSrc;
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@
             </form>
         </div>
         <div class="sign-in">
-            <form action="#">
+            <form action="#" id="signInForm" name="signInForm">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="" class="social"><img src="./image/facebook.png" alt=""></a>
@@ -60,17 +60,37 @@
 
     </div>
     <script type="text/javascript">
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbzvLs1i_LNzYPIPsriysaaTc1PHjObMx65bd6GecJMUGG6a0InB9qwgj4FL58AWd78BRQ/exec'
+
+        // const form = document.forms['signInForm']
+
+        // form.addEventListener('submit', e => {
+        //     e.preventDefault()
+        //     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        //         .then(response => alert("Thank you! your form is submitted successfully."))
+        //         .then(() => { window.location.reload(); })
+        //         .catch(error => console.error('Error!', error.message))
+        // })
+        
         const signUpButton = document.getElementById('sign-Up');
         const signInButton = document.getElementById('sign-In');
         const main = document.getElementById('main');
 
         signUpButton.addEventListener('click', () => {
             main.classList.add("right-panel-active")
-            });
+        });
 
-            signInButton.addEventListener('click', () => {
+        signInButton.addEventListener('click', () => {
             main.classList.remove("right-panel-active")
-            });
+        });
+        const signInForm = document.getElementById('signInForm');
+        signInForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            //Some function to validate the form will added later
+            window.location.href = 'index.html';
+        });
+
+
     </script>
 </body>
 

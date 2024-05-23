@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+.cart {
+    margin-left: 500px;
+    cursor: pointer;
+}
 .container1 {
     margin: 0 auto;
     max-width: 1600px;
