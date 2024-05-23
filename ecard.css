@@ -148,10 +148,10 @@
     font-family: 'Inter';
     font-style: normal;
     font-size: 18px;
+    text-align: justify;
+    color: #F6655D;
+    padding-top: 20px;
 
-    text-align: center;
-
-    color: #000000;
     margin-bottom: 40px;
 
 

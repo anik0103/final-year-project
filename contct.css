@@ -150,7 +150,7 @@ text-edge: cap; */
     width: 556px;
     height: 685px;
     /* border: 1px solid black; */
-    background-color: aliceblue;
+    background-color: #FF9A8B;
     border: 1px aliceblue;
     border-radius: 25px;
   }
@@ -177,10 +177,11 @@ text-edge: cap; */
     margin:0 0 0 ;
   }
   input[type="text"][required]:focus {
-    border-color: #00bafa;
+    border-color: #000000;
   }
   input[type="text"][required]:focus + label[placeholder]:before {
-    color: #00bafa;
+    color: #000000;
+    font-weight: bold;
   }
   input[type="text"][required]:focus + label[placeholder]:before,
   input[type="text"][required]:valid + label[placeholder]:before {
