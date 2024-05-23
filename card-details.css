@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
 }
-
+.cart {
+    margin-left: 500px;
+    cursor: pointer;
+}
 .body-section {
     align-items: center;
     display: flex;
