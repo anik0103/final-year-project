@@ -502,3 +502,13 @@ footer {
   padding: 0;
 }
 
+.upper_card img{
+width: 335px;
+height: 303px;
+object-fit: cover;
+border-radius: 20px;
+}
+ /* banner///////////////////////////////////////// */
+.about-img figure img {
+  width: 100%;
+}

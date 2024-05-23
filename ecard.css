@@ -145,19 +145,11 @@
     font-family: 'Inter';
     font-style: normal;
     font-size: 18px;
-
-    text-align: center;
-
-    color: #000000;
+    text-align: justify;
+    color: #F6655D;
     margin-bottom: 40px;
-
-
-
     font-weight: 600;
-
-
-
-
+    padding-top: 20px;
 }
 
 .col-sm {
