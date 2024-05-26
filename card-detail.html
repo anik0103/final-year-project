@@ -33,27 +33,21 @@
   <section class="body-section">
     <div class="container">
       <div class="right">
-        <img id="cardImage" src="" alt="">
+        <img id="cardImage" src="" alt="Cake Image">
       </div>
       <div class="left">
-        <h3>holidays</h3>
-        <h1>HAPPY HOLIDAYS</h1>
+        <h3>Cake Details</h3>
+        <h1 id="card-price">Price: </h1>
         <div class="card">
           <div class="card-body">
-            <h3>card verse</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias distinctio blanditiis commodi
-              deserunt vitae nobis et quam iusto sint.</p>
+            <h3>Card Verse</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias distinctio blanditiis commodi deserunt vitae nobis et quam iusto sint.</p>
           </div>
         </div>
-          <a href="/buy.html"><button class="b-btn">Buy now</button></a>
-        <!-- <div class="additionalcard">
-          <img src="Frame.png" alt="" height="22px">
-          <p>Add an optional gift card with this card</p>
-        </div>
+        <a href="/buy.html"><button class="b-btn">Buy now</button></a>
       </div>
-    </div> -->
+    </div>
   </section>
-  <!-- <footer-------------------------------------------- -->
   <section class="footer">
     <div class="container3">
       <div class="jj">
@@ -118,9 +112,7 @@
                 <form class="fr">
                   <div class="kl">
                     <input type="text" placeholder="Enter your email" class="kk">
-                    <button type="submit" class="k2">
-
-                    </button>
+                    <button type="submit" class="k2"></button>
                   </div>
                 </form>
                 <div class="nn">
@@ -161,8 +153,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       const urlParams = new URLSearchParams(window.location.search);
       const imgSrc = urlParams.get('img');
-      if (imgSrc) {
+      const price = urlParams.get('price');
+      if (imgSrc && price) {
         document.getElementById('cardImage').src = imgSrc;
+        document.getElementById('card-price').textContent = `Rs ${price}/-`;
       }
     });
   </script>
